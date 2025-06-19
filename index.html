@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume Submission Form</title>
+</head>
+<body>
+    <h2>Resume Submission Form</h2>
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>
+                Personal Information
+
+            </legend>
+
+            <label for="fieldName">Field Name:</label><br>
+            <input type="text" name="fieldName" required><br><br>
+
+            <label for="fullName">Full Name:</label><br>
+            <input type="text" name="fullName" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" name="phone" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" name="dob" required><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <select name="gender" required>
+                <option value="">--Select--</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Other</option>
+            </select><br><br>
+
+            <label for="maritalStatus">Marital Status:</label><br>
+            <select name="maritalStatus" required>
+                <option value="">--Select--</option>
+                <option>Single</option>
+                <option>Married</option>
+                <option>Other</option>
+            </select><br><br>
+
+            <label for="nationality">Nationality:</label><br>
+            <input type="text" name="nationality" required><br><br>
+
+            <label for="address">Address:</label><br>
+            <textarea name="address" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="linkedin">LinkedIn Profile URL:</label><br>
+            <input type="url" name="linkedin"><br><br>
+
+            <label for="github">GitHub Profile URL:</label><br>
+            <input type="url" name="github"><br><br>
+
+            <label for="photo">Upload Profile Photo:</label><br>
+            <input type="file" name="photo" accept="image/*"><br><br>
+
+            <label for="resume">Upload Resume (PDF only):</label><br>
+            <input type="file" name="resume" accept="application/pdf" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Career & Education</legend>
+
+            <label for="objective">Career Objective:</label><br>
+            <textarea name="objective" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="qualification">Highest Qualification:</label><br>
+            <input type="text" name="qualification" required><br><br>
+
+            <label for="college">Name of College / University:</label><br>
+            <input type="text" name="college" required><br><br>
+
+            <label for="graduation">Year of Graduation:</label><br>
+            <input type="number" name="graduation" min="1950" max="2100" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills & Experience</legend>
+
+            <label for="techSkills">Technical Skills (HTML, CSS, JS, etc.):</label><br>
+            <textarea name="techSkills" rows="3" cols="50" required></textarea><br><br>
+
+            <label for="progLanguages">Programming Languages Known:</label><br>
+            <textarea name="progLanguages" rows="2" cols="50" required></textarea><br><br>
+
+            <label for="certifications">Certifications (if any):</label><br>
+            <textarea name="certifications" rows="2" cols="50"></textarea><br><br>
+
+            <label for="experience">Work Experience (Years):</label><br>
+            <input type="number" name="experience" min="0" step="0.1" required><br><br>
+
+            <label for="lastCompany">Last Company Worked At:</label><br>
+            <input type="text" name="lastCompany"><br><br>
+
+            <label for="designation">Your Job Role / Designation:</label><br>
+            <input type="text" name="designation"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Other Information</legend>
+
+            <label for="languages">Languages Known:</label><br>
+            <textarea name="languages" rows="2" cols="50" required></textarea><br><br>
+
+            <label for="hobbies">Hobbies:</label><br>
+            <textarea name="hobbies" rows="2" cols="50" required></textarea><br><br>
+
+            <input type="checkbox" name="declaration" required>
+            <label for="declaration">I hereby declare that all the information provided is true and correct to the best of my knowledge.</label><br><br>
+        </fieldset>
+
+        <input type="submit" value="Submit Resume"> <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>
